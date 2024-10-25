@@ -1,44 +1,4 @@
-# import streamlit as st
-# import pandas as pd
 
-# st.title("Pandas Dataframe")
-
-# df = pd.DataFrame({
-#     'first column': [1, 2, 3, 4],
-#     'second column': [10, 20, 30, 40],
-# })
-
-# st.data_editor(df)
-
-# st.header("Metrics")
-
-# mean = df['first column'].mean()
-# median = df['first column'].median()
-# std = df['first column'].std()
-# min = df['first column'].min()
-# max = df['first column'].max()
-
-# st.write(f"Mean: {mean}")
-# st.write(f"Median: {median}")
-# st.write(f"Standard Deviation: {std}")
-# st.write(f"Minimum: {min}")
-# st.write(f"Maximum: {max}")
-
-
-# with st.form("my_form",clear_on_submit=True):
-#     name = st.text_input('Name')
-#     submitted = st.form_submit_button("Submit")
-#     if submitted:
-#         st.write(f"Hello {name}!")
-#         st.balloons()
-
-
-# if "c" not in st.session_state:
-#     st.session_state.c = 0
-    
-# if st.button("Increment"):
-#     st.session_state.c += 1
-# st.write(f"Count: {st.session_state.c}")
 import streamlit as st
 import google.generativeai as genai
 import os
